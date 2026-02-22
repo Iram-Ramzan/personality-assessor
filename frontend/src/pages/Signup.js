@@ -6,7 +6,7 @@ import signup from "./signup.jpg";
 
 const Signup = () => {
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState(false);
+  const showPassword = useState(false);
 
   const [form, setForm] = useState({
     name: "",

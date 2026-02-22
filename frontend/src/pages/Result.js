@@ -209,10 +209,8 @@ const Result = ({ answers, questions, onRestart, backendPersonality }) => {
 
   const {
     traitScores,
-    traitCounts,
     traitPercent,
     facetScores,
-    facetCounts,
     facetPercent,
     dominantTrait,
   } = useMemo(() => {
