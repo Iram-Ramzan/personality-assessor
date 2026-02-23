@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaLock,FaEye, FaEyeSlash} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import signup from "./signup.jpg";
 
 const Signup = () => {
   const navigate = useNavigate();
-  const showPassword = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePassword = () => setShowPassword(!showPassword);
 
   const [form, setForm] = useState({
     name: "",
@@ -119,13 +121,20 @@ const Signup = () => {
                 <FaLock />
               </span>
               <input
-                type={showPassword ? "text" : "password"}
+                type={showPassword ? "text" : "password"}  // Toggles visibility
                 name="password"
                 placeholder="Password"
                 value={form.password}
                 onChange={handleChange}
                 required
               />
+              <button 
+                type="button" 
+                className="passwordToggle"
+                onClick={togglePassword}
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
             </div>
 
             <label className="termsRow">
