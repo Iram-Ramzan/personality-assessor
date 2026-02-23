@@ -163,7 +163,7 @@ const Login = () => {
                 text="signup_with"
                 shape="rectangular"
                 width="100%"
-                logo_alignment="center"
+              
               />
             </div>
 
