@@ -78,7 +78,6 @@ const Signup = () => {
         localStorage.setItem('token', data.token);
         localStorage.setItem('userId', data.userId);
         localStorage.setItem('role', data.role);
-        alert("Welcome to Personality World!");
         navigate('/assessment');
       } else {
         alert(data.message || "Google login failed");
