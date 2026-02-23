@@ -238,3 +238,12 @@ form input:focus {
     top: 17px;
   }
 }
+.googleLoginContainer {
+  width: 100% !important;
+  display: block !important;
+  margin-top: 12px;
+}
+
+.googleLoginContainer > div {
+  width: 100% !important;
+}

@@ -335,3 +335,12 @@ form input:focus {
   color: #2563eb;
 }
 
+.googleLoginContainer {
+  width: 100% !important;
+  display: block !important;
+  margin-top: 12px;
+}
+
+.googleLoginContainer > div {
+  width: 100% !important;
+}
