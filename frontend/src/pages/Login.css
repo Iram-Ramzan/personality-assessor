@@ -70,6 +70,7 @@
 .rightSection {
   padding: 58px 64px;
   display: flex;
+   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #eef4ff;
