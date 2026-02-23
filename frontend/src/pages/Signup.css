@@ -335,10 +335,9 @@ form input:focus {
 }
 
 .googleLoginContainer {
-  width: 100% !important;
+  width: 100%;
+  max-width: 400px;
   margin-top: 12px;
 }
 
-.googleLoginContainer > div {
-  width: 100% !important;
-}
+

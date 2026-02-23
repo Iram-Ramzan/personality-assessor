@@ -154,18 +154,18 @@ const Login = () => {
 
           <div className="divider">or</div>
 
-           <div className="googleLoginContainer">
-              <GoogleLogin
-                onSuccess={handleGoogleSuccess}
-                onError={handleGoogleError}
-                theme="outline"
-                size="large"
-                text="signup_with"
-                shape="rectangular"
-                width="100%"
-                logo_alignment="center"
-              />
-            </div>
+          <div className="googleLoginContainer">
+            <GoogleLogin
+              onSuccess={handleGoogleSuccess}
+              onError={handleGoogleError}
+              theme="outline"
+              size="large"
+              text="signup_with"
+              shape="rectangular"
+              width={360}   
+              logo_alignment="center"
+            />
+          </div>
 
 
         </div>
