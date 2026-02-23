@@ -336,7 +336,6 @@ form input:focus {
 
 .googleLoginContainer {
   width: 100% !important;
-  display: block !important;
   margin-top: 12px;
 }
 
